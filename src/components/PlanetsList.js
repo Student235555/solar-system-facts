@@ -5,7 +5,7 @@ import Planet from './Planet';
 const PlanetsList = () => {
     return ( 
         <>
-            <p>Planets list:</p>
+            <h2>Planets list:</h2>
             <ul>
                 <Planet/>
             </ul>

@@ -5,6 +5,7 @@ import PlanetsList from './PlanetsList';
 function App() {
   return (
     <div className="App">
+      <h1>Solar System</h1>
       <PlanetsList/>
     </div>
   );
