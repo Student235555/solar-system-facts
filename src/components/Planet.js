@@ -4,14 +4,14 @@ import '../styles/Planet.css';
 const Planet = () => {
     return ( 
         <>
-            <li>Mercury</li>
-            <li>Venus</li>
-            <li>Earth</li>
-            <li>Mars</li>
-            <li>Jupiter</li>
-            <li>Saturn</li>
-            <li>Uranus</li>
-            <li>Neptune</li>
+            <li className='LiPlanet'>Mercury</li>
+            <li className='LiPlanet'>Venus</li>
+            <li className='LiPlanet'>Earth</li>
+            <li className='LiPlanet'>Mars</li>
+            <li className='LiPlanet'>Jupiter</li>
+            <li className='LiPlanet'>Saturn</li>
+            <li className='LiPlanet'>Uranus</li>
+            <li className='LiPlanet'>Neptune</li>
         </>
      );
 }
