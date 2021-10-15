@@ -6,7 +6,7 @@ const PlanetsList = () => {
     return ( 
         <>
             <h2>Planets list:</h2>
-            <ul>
+            <ul className='UlPlanetsList'>
                 <Planet/>
             </ul>
         </>
