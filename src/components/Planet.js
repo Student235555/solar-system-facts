@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import '../styles/Planet.css';
 
-const Planet = () => {
+const Planet = ({astrObj}) => {
+
+    const {name} = astrObj;
 
     const [active, setActive] = useState(true);
 
@@ -13,14 +15,7 @@ const Planet = () => {
 
     return ( 
         <>
-            <li className={LiPlanet} onClick={() => changeColor()}>Mercury</li>
-            <li className='LiPlanet'>Venus</li>
-            <li className='LiPlanet'>Earth</li>
-            <li className='LiPlanet'>Mars</li>
-            <li className='LiPlanet'>Jupiter</li>
-            <li className='LiPlanet'>Saturn</li>
-            <li className='LiPlanet'>Uranus</li>
-            <li className='LiPlanet'>Neptune</li>
+            <li className={LiPlanet} onClick={() => changeColor()}>{name}</li>
         </>
      );
 }
