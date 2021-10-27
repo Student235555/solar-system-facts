@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/Planet.css';
 
 const Planet = () => {
+
+    const [active, setActive] = useState(true);
+
+    let LiPlanet = active ? "LiPlanet" : "LiPlanet2";
+
+    const changeColor = () => {
+        setActive(!active);
+    }
+
     return ( 
         <>
-            <li className='LiPlanet'>Mercury</li>
+            <li className={LiPlanet} onClick={() => changeColor()}>Mercury</li>
             <li className='LiPlanet'>Venus</li>
             <li className='LiPlanet'>Earth</li>
             <li className='LiPlanet'>Mars</li>

@@ -4,9 +4,20 @@
     margin-top: 15px;
     text-transform: uppercase;
     transition: 0.2s;
+    color: white;
 }
 
-.LiPlanet:hover{
+.LiPlanet2{
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: red;
+}
+
+.LiPlanet:hover, .LiPlanet2:hover{
     cursor: pointer;
     color: yellow;
 }
+
