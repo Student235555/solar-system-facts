@@ -10,9 +10,23 @@ const PlanetsList = ({solarSystem}) => {
 
     return ( 
         <>
-            <ul className='UlPlanetsList'>
-                {astronomicalObjects}
-            </ul>
+        <div className="rows">
+            <div className="row1">
+                <div className="planetInfo"><p>Mercury</p></div>
+                <div className="planetInfo"><p>Venus</p></div>
+                <ul className='UlPlanetsList'>
+                    {astronomicalObjects}
+                </ul>
+                <div className="planetInfo"><p>Earth</p></div>
+                <div className="planetInfo"><p>Mars</p></div>
+            </div>
+            <div className="row2">
+                <div className="planetInfo"><p>Jupiter</p></div>
+                <div className="planetInfo"><p>Saturn</p></div>
+                <div className="planetInfo"><p>Uranus</p></div>
+                <div className="planetInfo"><p>Neptune</p></div>
+            </div>
+        </div>
         </>
      );
 }
