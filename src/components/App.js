@@ -5,38 +5,34 @@ import PlanetsList from './PlanetsList';
 const solarSystem = [
   {
     id: 0,
-    name: "Sun",
-  },
-  {
-    id: 2,
     name: "Mercury",
   },
   {
-    id: 3,
+    id: 1,
     name: "Venus",
   },
   {
-    id: 4,
+    id: 2,
     name: "Earth",
   },
   {
-    id: 5,
+    id: 3,
     name: "Mars",
   },
   {
-    id: 6,
+    id: 4,
     name: "Jupiter",
   },
   {
-    id: 7,
+    id: 5,
     name: "Saturn",
   },
   {
-    id: 8,
+    id: 6,
     name: "Uranus",
   },
   {
-    id: 9,
+    id: 7,
     name: "Neptune",
   },
 ]
@@ -44,7 +40,7 @@ const solarSystem = [
 function App() {
   return (
     <div className="App">
-      <h1>Solar System</h1>
+      <h1 className='mainH1'>Planets in our solar system</h1>
       <PlanetsList solarSystem={solarSystem}/>
     </div>
   );
