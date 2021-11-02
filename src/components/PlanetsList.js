@@ -10,7 +10,6 @@ const PlanetsList = ({solarSystem}) => {
 
     return ( 
         <>
-            <h2>Planets list:</h2>
             <ul className='UlPlanetsList'>
                 {astronomicalObjects}
             </ul>

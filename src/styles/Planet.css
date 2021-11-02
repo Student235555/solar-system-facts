@@ -1,23 +1,23 @@
-.LiPlanet{
+.LiPlanetMain{
     width: fit-content;
     margin: auto;
     margin-top: 15px;
     text-transform: uppercase;
     transition: 0.2s;
+}
+
+.LiPlanetColor1{
     color: white;
 }
 
-.LiPlanet2{
-    width: fit-content;
-    margin: auto;
-    margin-top: 15px;
-    text-transform: uppercase;
-    transition: 0.2s;
+.LiPlanetColor2{
     color: red;
 }
 
-.LiPlanet:hover, .LiPlanet2:hover{
+
+.LiPlanetMain:hover{
     cursor: pointer;
     color: yellow;
+    transform: translate(10px);
 }
 

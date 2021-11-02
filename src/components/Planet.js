@@ -7,7 +7,8 @@ const Planet = ({astrObj}) => {
 
     const [active, setActive] = useState(true);
 
-    let LiPlanet = active ? "LiPlanet" : "LiPlanet2";
+    let LiPlanetMain = 'LiPlanetMain';
+    let LiPlanetColor = active ? "LiPlanetColor1" : "LiPlanetColor2";
 
     const changeColor = () => {
         setActive(!active);
@@ -15,7 +16,7 @@ const Planet = ({astrObj}) => {
 
     return ( 
         <>
-            <li className={LiPlanet} onClick={() => changeColor()}>{name}</li>
+            <li className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => changeColor()}>{name}</li>
         </>
      );
 }
