@@ -4,24 +4,23 @@ import Planet from './Planet';
 
 const PlanetsList = ({solarSystem}) => {
 
-    const [visible, setVisible] = useState(true);
+    const [infoVisable, setInfoVisable] = useState(true);
 
     let planetInfo = 'planetInfo';
-    let PlanetInfoVis = visible ? "planetInfoVis" : "planetInfoNoVis";
+    let planetInfoVisibility = infoVisable ? "planetInfoVis" : "planetInfoNoVis";
 
     const changeVisibility = () => {
-        setVisible(!visible);
+        setInfoVisable(!infoVisable);
     }
 
     const astronomicalObjects = solarSystem.map(astrObj =>
         <Planet key={astrObj.id} astrObj={astrObj} vis={changeVisibility}/>)
 
-
     return ( 
         <>
         <div className="rows">
             <div className="row1">
-                <div className={planetInfo + ' ' + PlanetInfoVis}><p>Mercury</p></div>
+                <div className={planetInfo + ' ' + planetInfoVisibility}><p>Mercury</p></div>
                 <div className="planetInfo"><p>Venus</p></div>
                 <ul className='UlPlanetsList'>
                     {astronomicalObjects}
