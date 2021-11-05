@@ -1,18 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/PlanetsList.css';
 import Planet from './Planet';
 
 const PlanetsList = ({solarSystem}) => {
 
+    const [visible, setVisible] = useState(true);
+
+    let planetInfo = 'planetInfo';
+    let PlanetInfoVis = visible ? "planetInfoVis" : "planetInfoNoVis";
+
+    const changeVisibility = () => {
+        setVisible(!visible);
+    }
+
     const astronomicalObjects = solarSystem.map(astrObj =>
-        <Planet key={astrObj.id} astrObj={astrObj}/>)
+        <Planet key={astrObj.id} astrObj={astrObj} vis={changeVisibility}/>)
 
 
     return ( 
         <>
         <div className="rows">
             <div className="row1">
-                <div className="planetInfo"><p>Mercury</p></div>
+                <div className={planetInfo + ' ' + PlanetInfoVis}><p>Mercury</p></div>
                 <div className="planetInfo"><p>Venus</p></div>
                 <ul className='UlPlanetsList'>
                     {astronomicalObjects}

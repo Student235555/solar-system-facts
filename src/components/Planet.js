@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/Planet.css';
 
-const Planet = ({astrObj}) => {
+const Planet = ({astrObj, vis}) => {
 
     const {name} = astrObj;
 
@@ -16,7 +16,7 @@ const Planet = ({astrObj}) => {
 
     return ( 
         <>
-            <li className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => changeColor()}>{name}</li>
+            <li className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => { changeColor(); vis();}}>{name}</li>
         </>
      );
 }
