@@ -21,3 +21,14 @@
     transform: translate(10px);
 }
 
+.divInLi{
+    border: 3px solid yellow;
+}
+
+.divInLiVis{
+    visibility: visible;
+}
+
+.divInLiNoVis{
+    visibility: hidden;
+}

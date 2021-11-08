@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/Planet.css';
 
-const Planet = ({astrObj, vis}) => {
+const Planet = ({astrObj}) => {
 
     const {name} = astrObj;
 
@@ -14,9 +14,22 @@ const Planet = ({astrObj, vis}) => {
         setActive(!active);
     }
 
+
+    const [visi, setVisi] = useState(true);
+
+    let divInLi = 'divInLi';
+    let divInLiVis = visi ? "divInLiVis" : "divInLiNoVis";
+
+    const changeVisi = () => {
+        setVisi(!visi);
+    }
+
     return ( 
         <>
-            <li className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => { changeColor(); vis();}}>{name}</li>
+            <li>
+                <p className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => { changeColor(); changeVisi();}}>{name}</p>
+                <div className={divInLi + ' ' + divInLiVis}>{name + " LOL"}</div>
+            </li>
         </>
      );
 }
