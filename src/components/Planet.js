@@ -18,7 +18,7 @@ const Planet = ({astrObj}) => {
     const [visi, setVisi] = useState(true);
 
     let divInLi = 'divInLi';
-    let divInLiVis = visi ? "divInLiVis" : "divInLiNoVis";
+    let divInLiVis = visi ? "divInLiNoVis" : "divInLiVis";
 
     const changeVisi = () => {
         setVisi(!visi);
@@ -26,7 +26,7 @@ const Planet = ({astrObj}) => {
 
     return ( 
         <>
-            <li>
+            <li className='planetLiContainer'>
                 <p className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => { changeColor(); changeVisi();}}>{name}</p>
                 <div className={divInLi + ' ' + divInLiVis}>{name + " LOL"}</div>
             </li>
