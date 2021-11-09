@@ -41,6 +41,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='mainH1'>Planets in our solar system</h1>
+      <h3 className='mainH5'>Click on a planet name to show more info!</h3>
       <PlanetsList solarSystem={solarSystem}/>
     </div>
   );
