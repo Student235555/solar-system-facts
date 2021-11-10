@@ -29,14 +29,14 @@ const Planet = ({astrObj}) => {
             <li className='planetLiContainer'>
                 <p className={LiPlanetMain + ' ' + LiPlanetColor} onClick={() => { changeColor(); changeVisi();}}>{name}</p>
                 <div className={divInLi + ' ' + divInLiVis}>
-                    <p>Mass: {mass} 10<sup>24</sup> kg</p>
-                    <p>Diameter: {diameter} km</p>
-                    <p>{gravity}</p>
-                    <p>{lengthOfDay}</p>
-                    <p>{orbitalPeriod}</p>
-                    <p>{distanceFromSun}</p>
-                    <p>{meanTemperature}</p>
-                    <p>{moons}</p>
+                    <p> <span>Mass: </span>{mass}*10<sup>24</sup> kg</p>
+                    <p><span>Diameter: </span>{diameter} km</p>
+                    <p><span>Gravity: </span>{gravity} m/s<sup>2</sup></p>
+                    <p><span>Length of day: </span>{lengthOfDay} hours</p>
+                    <p><span>Orbital period: </span>{orbitalPeriod} days</p>
+                    <p><span>Distance from Sun: </span>{distanceFromSun}*10<sup>6</sup> km</p>
+                    <p><span>Mean temperature: </span>{meanTemperature} &#176;C</p>
+                    <p><span>Number of moons: </span>{moons}</p>
                 </div>
             </li>
         </>

@@ -1,7 +1,7 @@
 .planetLiContainer{
     width: 20%;
     margin: 0 15px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
 .LiPlanetMain{
@@ -11,30 +11,30 @@
     margin-bottom: 30px;
     padding: 10px;
     text-transform: uppercase;
+    color: white;
     border: 3px darkcyan solid;
     border-radius: 30%;
     transition: 0.2s;
 }
 
 .LiPlanetColor1{
-    color: white;
+    background-color: #1F1B24;
 }
 
 .LiPlanetColor2{
-    color: red;
+    background-color: darkcyan;
 }
 
 
 .LiPlanetMain:hover{
     cursor: pointer;
-    color: yellow;
     transform: translate(10px);
 }
 
 .divInLi{
     border: 3px solid yellow;
     border-radius: 10%;
-    height: 200px;
+    height: 260px;
 }
 
 .divInLiVis{
@@ -43,4 +43,14 @@
 
 .divInLiNoVis{
     visibility: hidden;
+}
+
+.divInLi p{
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.divInLi p span{
+   font-weight: bold;
 }
