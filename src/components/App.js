@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import '../styles/App.css';
 import PlanetsList from './PlanetsList';
 
@@ -103,11 +104,13 @@ const solarSystem = [
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='mainH1'>Planets in our solar system</h1>
-      <h3 className='mainH5'>Click on a planet name to show more info!</h3>
-      <PlanetsList solarSystem={solarSystem}/>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <h1 className='mainH1'>Planets in our solar system</h1>
+        <h3 className='mainH5'>Click on a planet name to show more info!</h3>
+        <PlanetsList solarSystem={solarSystem}/>
+      </div>
+    </Router>
   );
 }
 
