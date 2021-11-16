@@ -106,7 +106,11 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <h1 className='mainH1'>Planets in our solar system</h1>
+        <div className="mainRow">
+          <button className='mainButton'>age calculator</button>
+          <h1 className='mainH1'>Planets in our solar system</h1>
+          <button className='mainButton'>simulation</button>
+        </div>
         <h3 className='mainH5'>Click on a planet name to show more info!</h3>
         <PlanetsList solarSystem={solarSystem}/>
       </div>

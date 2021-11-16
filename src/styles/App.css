@@ -14,7 +14,29 @@
   background-color: #1F1B24;
 }
 
+.mainRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
 .mainH1{
   padding: 20px 0 20px 0;
   text-transform: uppercase;
+}
+
+.mainButton{
+  height: 50px;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 15%;
+  text-transform: uppercase;
+  transition: 0.2s;
+  background-color: pink;
+  border: 5px solid red;
+}
+
+.mainButton:hover{
+  background-color: red;
 }
