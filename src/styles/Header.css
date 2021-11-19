@@ -1,0 +1,23 @@
+.mainRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+  }
+
+  .mainButton a{
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    border: 3px red solid;
+    border-radius: 30%;
+    transition: 0.2s;
+  }
+  
+  .mainButton:hover a{
+    background-color: red;
+  }
