@@ -1,0 +1,25 @@
+.calcH1{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.calcH4{
+    padding-bottom: 10px;
+}
+
+.calcMainDiv{
+    height: 50vh;
+}
+
+.ageBtn{
+    padding: 3px 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    background-color: #1F1B24;
+}
+
+.ageInput{
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #1F1B24;
+}
