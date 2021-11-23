@@ -13,8 +13,13 @@ const AgeCalculator = () => {
 
     const handleClick = () => {
         console.log(dateOfBirth);
+        console.log(today);
+        const diffTime = Math.abs(Date.parse(today) - Date.parse(dateOfBirth));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        console.log(diffTime + " milliseconds");
+        console.log(diffDays + " days");
+        return diffDays;
     }
-
 
     return ( 
         <div>
