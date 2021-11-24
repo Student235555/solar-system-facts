@@ -8,17 +8,20 @@ const AgeCalculator = () => {
     const minDate = "1888-01-01";
     let maxDate = today.slice(0,4)*1+10;
     maxDate = maxDate+"-12-31";
-
+    
     const [dateOfBirth , setDateOfBirth] = useState(today);
+    const [firstClick, setFirstClick] = useState(false);
+    const [days, setDays] = useState(0);
 
     const handleClick = () => {
+        setFirstClick(true);
         console.log(dateOfBirth);
         console.log(today);
         const diffTime = Math.abs(Date.parse(today) - Date.parse(dateOfBirth));
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
         console.log(diffTime + " milliseconds");
         console.log(diffDays + " days");
-        return diffDays;
+        setDays(diffDays);
     }
 
     return ( 
@@ -29,6 +32,7 @@ const AgeCalculator = () => {
                 <label htmlFor="date">Please, select your date of birth:</label>
                 <input className='ageInput' type="date" value={dateOfBirth} min={minDate} max={maxDate} onChange={event => setDateOfBirth(event.target.value)}></input><br/>
                 <button className='ageBtn' onClick={handleClick}>Check your age!</button><br/>
+                {firstClick ? <p>{days}</p> : <p>NOT CLICKED</p>}
             </div>
             <Link to="/">Return</Link>
         </div>
