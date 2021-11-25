@@ -13,6 +13,8 @@ const AgeCalculator = () => {
     const [firstClick, setFirstClick] = useState(false);
     const [days, setDays] = useState(0);
 
+    let content = null;
+
     const [mercuryAge, setMercuryAge] = useState(0);
     const [venusAge, setVenusAge] = useState(0);
     const [earthAge, setEarthAge] = useState(0);
@@ -41,6 +43,20 @@ const AgeCalculator = () => {
         setNeptuneAge(diffDays/(164*365));
     }
 
+    content = (
+        <>
+            <h3>Your age on other planets:</h3>
+            <h4>Mercury: {mercuryAge.toFixed(2)}</h4>
+            <h4>Venus: {venusAge.toFixed(2)}</h4>
+            <h4>Earth: {earthAge.toFixed(2)}</h4>
+            <h4>Mars: {marsAge.toFixed(2)}</h4>
+            <h4>Jupiter: {jupiterAge.toFixed(2)}</h4>
+            <h4>Saturn: {saturnAge.toFixed(2)}</h4>
+            <h4>Uranus: {uranusAge.toFixed(2)}</h4>
+            <h4>Neptune: {neptuneAge.toFixed(2)}</h4>
+        </>
+    )
+
     return ( 
         <div>
             <h1 className='calcH1'>Age calculator</h1>
@@ -49,7 +65,7 @@ const AgeCalculator = () => {
                 <label htmlFor="date">Please, select your date of birth:</label>
                 <input className='ageInput' type="date" value={dateOfBirth} min={minDate} max={maxDate} onChange={event => setDateOfBirth(event.target.value)}></input><br/>
                 <button className='ageBtn' onClick={handleClick}>Check your age!</button><br/>
-                {firstClick ? <p>{days}</p> : <p>NOT CLICKED</p>}
+                {firstClick ? content : <p>Please, enter your birthday above in order to display results!</p>}
             </div>
             <Link to="/">Return</Link>
         </div>
