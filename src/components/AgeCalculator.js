@@ -54,6 +54,7 @@ const AgeCalculator = () => {
             <h4>Saturn: {saturnAge.toFixed(2)}</h4>
             <h4>Uranus: {uranusAge.toFixed(2)}</h4>
             <h4>Neptune: {neptuneAge.toFixed(2)}</h4>
+            <h4>Number of days: {days}</h4>
         </>
     )
 
