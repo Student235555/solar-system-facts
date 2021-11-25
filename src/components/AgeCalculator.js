@@ -13,6 +13,15 @@ const AgeCalculator = () => {
     const [firstClick, setFirstClick] = useState(false);
     const [days, setDays] = useState(0);
 
+    const [mercuryAge, setMercuryAge] = useState(0);
+    const [venusAge, setVenusAge] = useState(0);
+    const [earthAge, setEarthAge] = useState(0);
+    const [marsAge, setMarsAge] = useState(0);
+    const [jupiterAge, setJupiterAge] = useState(0);
+    const [saturnAge, setSaturnAge] = useState(0);
+    const [uranusAge, setUranusAge] = useState(0);
+    const [neptuneAge, setNeptuneAge] = useState(0);
+
     const handleClick = () => {
         setFirstClick(true);
         console.log(dateOfBirth);
@@ -22,6 +31,14 @@ const AgeCalculator = () => {
         console.log(diffTime + " milliseconds");
         console.log(diffDays + " days");
         setDays(diffDays);
+        setMercuryAge(diffDays/88);
+        setVenusAge(diffDays/225);
+        setEarthAge(diffDays/365);
+        setMarsAge(diffDays/687);
+        setJupiterAge(diffDays/(11.8*365));
+        setSaturnAge(diffDays/(29.4*365));
+        setUranusAge(diffDays/(84*365));
+        setNeptuneAge(diffDays/(164*365));
     }
 
     return ( 
