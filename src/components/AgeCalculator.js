@@ -45,16 +45,18 @@ const AgeCalculator = () => {
 
     content = (
         <>
-            <h3>Your age on other planets:</h3>
-            <h4>Mercury: {mercuryAge.toFixed(2)}</h4>
-            <h4>Venus: {venusAge.toFixed(2)}</h4>
-            <h4>Earth: {earthAge.toFixed(2)}</h4>
-            <h4>Mars: {marsAge.toFixed(2)}</h4>
-            <h4>Jupiter: {jupiterAge.toFixed(2)}</h4>
-            <h4>Saturn: {saturnAge.toFixed(2)}</h4>
-            <h4>Uranus: {uranusAge.toFixed(2)}</h4>
-            <h4>Neptune: {neptuneAge.toFixed(2)}</h4>
-            <h4>Number of days: {days}</h4>
+         <h3 className='resultsLabelH3'>Your age on other planets:</h3>
+            <div className="results">
+                <h4>Mercury: {mercuryAge.toFixed(2)}</h4>
+                <h4>Venus: {venusAge.toFixed(2)}</h4>
+                <h4>Earth: {earthAge.toFixed(2)}</h4>
+                <h4>Mars: {marsAge.toFixed(2)}</h4>
+                <h4>Jupiter: {jupiterAge.toFixed(2)}</h4>
+                <h4>Saturn: {saturnAge.toFixed(2)}</h4>
+                <h4>Uranus: {uranusAge.toFixed(2)}</h4>
+                <h4>Neptune: {neptuneAge.toFixed(2)}</h4>
+                <h4>It's been {days} days on Earth since your birth.</h4>
+            </div>
         </>
     )
 
@@ -68,7 +70,7 @@ const AgeCalculator = () => {
                 <button className='ageBtn' onClick={handleClick}>Check your age!</button><br/>
                 {firstClick ? content : <p>Please, enter your birthday above in order to display results!</p>}
             </div>
-            <Link to="/">Return</Link>
+            <p className='returnLink'><Link to="/">Return to the main page</Link></p>
         </div>
      );
 }

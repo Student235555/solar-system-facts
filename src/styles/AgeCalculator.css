@@ -6,15 +6,18 @@
     padding-bottom: 10px;
 }
 
-.calcMainDiv{
-    height: 50vh;
-}
-
 .ageBtn{
-    padding: 3px 10px;
+    padding: 10px 15px;
     text-transform: uppercase;
     margin: 20px;
     background-color: #1F1B24;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ageBtn:hover{
+   color: black;
+   background-color: white;
 }
 
 .ageInput{
@@ -22,4 +25,21 @@
     padding: 5px 10px;
     font-size: 20px;
     background-color: #1F1B24;
+}
+
+.resultsLabelH3{
+    margin-bottom: 10px;
+}
+
+.results{
+    text-align: left;
+}
+
+.results h4{
+    margin-bottom: 10px;
+}
+
+.returnLink{
+    margin-top: 25px;
+    font-size: 20px;
 }
