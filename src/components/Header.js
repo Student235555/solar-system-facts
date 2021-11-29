@@ -3,7 +3,7 @@ import '../styles/Header.css';
 import {NavLink} from 'react-router-dom';
 
 const list = [
-    {name: "calculator", path: "/calculator"},
+    {name: "age calculator", path: "/calculator"},
     {name: "simulation", path: "/simulation"},
 ];
 
