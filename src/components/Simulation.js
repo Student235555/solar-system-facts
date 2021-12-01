@@ -6,7 +6,7 @@ const Simulation = () => {
     return ( 
         <div>
             <h1>Simulation</h1>
-            <Link to="/">Return</Link>
+            <p className='returnLink'><Link to="/">Return to the main page</Link></p>
         </div>
      );
 }
