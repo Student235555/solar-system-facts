@@ -1,0 +1,77 @@
+.dots{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 300px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin-right: 50px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .sun{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+  }
+
+  .mercury{
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+  }
+
+  .venus{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+  }
+
+  .earth{
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+  }
+
+  .mars{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+  }
+
+  .jupiter{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+  }
+  
+  .saturn{
+      position: relative;
+    height: 90px;
+    width: 90px;
+    background-color: orange;
+  }
+
+  .uranus{
+    height: 70px;
+    width: 70px;
+    background-color: aqua;
+  }
+
+  .neptune{
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+  }
+
+  .line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    border-top: 6px solid #ccc;
+    transform: translate(-50%, -50%);
+  }
