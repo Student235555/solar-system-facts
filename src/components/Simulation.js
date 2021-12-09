@@ -15,7 +15,7 @@ const Simulation = () => {
                 <span class="dot venus"></span>
                 <span class="dot mars"></span>
                 <span class="dot saturn">
-                    {/* <div class='line'></div> */}
+                     <div class='line'></div> 
                 </span>
                 <span class="dot neptune"></span>
             </div>

@@ -21,16 +21,7 @@
     background-color: yellow;
   }
 
-  @keyframes spinAroundV {
-    from {
-      transform: rotate(0deg) translate(120px);
-    }
-    to {
-      transform: rotate(360deg) translate(120px);
-    }
-  }
-
-  @keyframes spinAroundM {
+  @keyframes spinMercury {
     from {
       transform: rotate(0deg) translate(60px);
     }
@@ -39,54 +30,122 @@
     }
   }
 
+  @keyframes spinVenus {
+    from {
+      transform: rotate(0deg) translate(90px);
+    }
+    to {
+      transform: rotate(360deg) translate(90px);
+    }
+  }
+
+  @keyframes spinEarth {
+    from {
+      transform: rotate(0deg) translate(120px);
+    }
+    to {
+      transform: rotate(360deg) translate(120px);
+    }
+  }
+
+  @keyframes spinMars {
+    from {
+      transform: rotate(0deg) translate(150px);
+    }
+    to {
+      transform: rotate(360deg) translate(150px);
+    }
+  }
+  @keyframes spinJupiter {
+    from {
+      transform: rotate(0deg) translate(180px);
+    }
+    to {
+      transform: rotate(360deg) translate(180px);
+    }
+  }
+
+  @keyframes spinSaturn {
+    from {
+      transform: rotate(0deg) translate(210px);
+    }
+    to {
+      transform: rotate(360deg) translate(210px);
+    }
+  }
+  @keyframes spinUranus {
+    from {
+      transform: rotate(0deg) translate(240px);
+    }
+    to {
+      transform: rotate(360deg) translate(240px);
+    }
+  }
+
+  @keyframes spinNeptune {
+    from {
+      transform: rotate(0deg) translate(270px);
+    }
+    to {
+      transform: rotate(360deg) translate(270px);
+    }
+  }
+  
+
   .mercury{
     /* height: 30px;
     width: 30px; */
     background-color: grey;
-    animation: spinAroundM 3s linear infinite; 
+    animation: spinMercury 3s linear infinite; 
   }
 
   .venus{
     /* height: 50px;
     width: 50px; */
     background-color: brown;
-    animation: spinAroundV 4s linear infinite; 
+    animation: spinVenus 4s linear infinite; 
   }
 
   .earth{
     /* height: 50px;
     width: 50px; */
     background-color: greenyellow;
+    animation: spinEarth 5s linear infinite;
   }
 
   .mars{
     /* height: 40px;
     width: 40px; */
     background-color: red;
+    animation: spinMars 6s linear infinite; 
   }
 
   .jupiter{
     /* height: 100px;
     width: 100px; */
     background-color: orangered;
+    animation: spinJupiter 7s linear infinite; 
   }
   
   .saturn{
     /* height: 90px;
     width: 90px; */
     background-color: orange;
+    animation: spinSaturn 8s linear infinite; 
   }
 
   .uranus{
     /* height: 70px;
     width: 70px; */
     background-color: aqua;
+    animation: spinUranus 9s linear infinite; 
   }
 
   .neptune{
     /* height: 70px;
     width: 70px; */
     background-color: blue;
+    animation: spinNeptune 10s linear infinite; 
   }
 
   .line{
