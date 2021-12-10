@@ -9,9 +9,9 @@ const Page = () => {
     return ( 
         <>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Simulation />} />
             <Route path="calculator" element={<AgeCalculator />} />
-            <Route path="simulation" element={<Simulation />} />
+            <Route path="simulation" element={<HomePage />} />
             <Route element={<ErrorPage />} />
           </Routes>
         </>

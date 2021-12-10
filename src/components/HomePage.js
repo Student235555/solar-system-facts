@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/HomePage.css';
 import PlanetsList from './PlanetsList';
-
+import {Link} from 'react-router-dom';
 
 const solarSystem = [
     {
@@ -105,6 +105,7 @@ const solarSystem = [
 const HomePage = () => {
     return ( 
         <div>
+          <p className='returnLink'><Link to="/">Return to the main page</Link></p>
           <h1 className='mainH1'>Planets in our solar system</h1>
           <h3 className='mainH5'>Click on a planet name to show more info!</h3>
           <PlanetsList solarSystem={solarSystem}/>

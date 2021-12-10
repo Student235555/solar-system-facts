@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 
 const list = [
     {name: "age calculator", path: "/calculator"},
-    {name: "simulation", path: "/simulation"},
+    {name: "about planets", path: "/simulation"},
 ];
 
 const Header = () => {

@@ -1,3 +1,7 @@
+.H1simulation{
+  text-transform: uppercase;
+}
+
 .dots{
     text-align: center;
     margin-top: 250px;
@@ -157,6 +161,3 @@
     transform: translate(-50%, -50%);
   }
 
-  .returnLink{
-    margin-top: 600px;
-  }
