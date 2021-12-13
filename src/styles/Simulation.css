@@ -161,3 +161,117 @@
     transform: translate(-50%, -50%);
   }
 
+  @media(orientation: landscape) and (max-width: 1200px){
+    .H1simulation{
+      margin-top: 50px;
+    }
+  }
+
+  @media(orientation: portrait){
+
+    .H1simulation{
+      margin-top: 50px;
+    }
+
+    .mercury{
+      animation: spinMercuryP 3s linear infinite; 
+    }
+  
+    .venus{
+      animation: spinVenusP 4s linear infinite; 
+    }
+  
+    .earth{
+      animation: spinEarthP 5s linear infinite;
+    }
+  
+    .mars{
+      animation: spinMarsP 6s linear infinite; 
+    }
+  
+    .jupiter{
+      animation: spinJupiterP 7s linear infinite; 
+    }
+    
+    .saturn{
+      animation: spinSaturnP 8s linear infinite; 
+    }
+  
+    .uranus{
+      animation: spinUranusP 9s linear infinite; 
+    }
+  
+    .neptune{
+      animation: spinNeptuneP 10s linear infinite; 
+    }
+
+    @keyframes spinMercuryP {
+      from {
+        transform: rotate(0deg) translate(40px);
+      }
+      to {
+        transform: rotate(360deg) translate(40px);
+      }
+    }
+  
+    @keyframes spinVenusP {
+      from {
+        transform: rotate(0deg) translate(50px);
+      }
+      to {
+        transform: rotate(360deg) translate(50px);
+      }
+    }
+  
+    @keyframes spinEarthP {
+      from {
+        transform: rotate(0deg) translate(60px);
+      }
+      to {
+        transform: rotate(360deg) translate(60px);
+      }
+    }
+  
+    @keyframes spinMarsP {
+      from {
+        transform: rotate(0deg) translate(70px);
+      }
+      to {
+        transform: rotate(360deg) translate(70px);
+      }
+    }
+    @keyframes spinJupiterP {
+      from {
+        transform: rotate(0deg) translate(80px);
+      }
+      to {
+        transform: rotate(360deg) translate(80px);
+      }
+    }
+  
+    @keyframes spinSaturnP {
+      from {
+        transform: rotate(0deg) translate(90px);
+      }
+      to {
+        transform: rotate(360deg) translate(90px);
+      }
+    }
+    @keyframes spinUranusP {
+      from {
+        transform: rotate(0deg) translate(100px);
+      }
+      to {
+        transform: rotate(360deg) translate(100px);
+      }
+    }
+  
+    @keyframes spinNeptuneP {
+      from {
+        transform: rotate(0deg) translate(110px);
+      }
+      to {
+        transform: rotate(360deg) translate(110px);
+      }
+    }
+}
