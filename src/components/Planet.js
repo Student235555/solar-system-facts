@@ -15,7 +15,7 @@ const Planet = ({astrObj}) => {
     }
 
 
-    const [visi, setVisi] = useState(true);
+    const [visi, setVisi] = useState(false);
 
     let divInLi = 'divInLi';
     let divInLiVis = visi ? "divInLiNoVis" : "divInLiVis";
