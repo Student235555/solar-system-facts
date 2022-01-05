@@ -54,3 +54,21 @@
 .divInLi p span{
    font-weight: bold;
 }
+
+@media(orientation: portrait) and (min-width: 350px){
+    .planetLiContainer{
+        width: 80%; 
+    }
+}
+
+@media(min-width: 812px){
+    .planetLiContainer{
+        width: 45%; 
+    }
+}
+
+@media(orientation: landscape) and (min-width: 1200px){
+    .planetLiContainer{
+        width: 30%; 
+    }
+}
