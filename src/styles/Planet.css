@@ -1,5 +1,6 @@
 .planetLiContainer{
     width: 20%;
+    min-width: 350px;
     margin: 0 15px;
     margin-bottom: 10px;
 }
@@ -61,14 +62,20 @@
     }
 }
 
-@media(min-width: 812px){
+@media(min-width: 675px){
     .planetLiContainer{
         width: 45%; 
     }
 }
 
-@media(orientation: landscape) and (min-width: 1200px){
+@media(orientation: landscape) and (min-width: 1050px){
     .planetLiContainer{
         width: 30%; 
+    }
+}
+
+@media(orientation: landscape) and (min-width: 1400px){
+    .planetLiContainer{
+        width: 15%; 
     }
 }
