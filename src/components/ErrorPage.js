@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 const ErrorPage = () => {
     return ( 
         <>
-            <div>ERROR</div>
-            <Link to="/">Return</Link>
+            <h1>Ooops... Something went wrong!</h1>
+            <p className='returnLink'><Link to="/">Return to the main page</Link></p>
         </>
      );
 }

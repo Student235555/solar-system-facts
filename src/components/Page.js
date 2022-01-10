@@ -12,7 +12,7 @@ const Page = () => {
             <Route path="/" element={<Simulation />} />
             <Route path="calculator" element={<AgeCalculator />} />
             <Route path="simulation" element={<HomePage />} />
-            <Route element={<ErrorPage />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </>
      );
