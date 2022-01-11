@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/solar-system-facts/static/css/main.49fcd4e7.chunk.css",
+    "main.js": "/solar-system-facts/static/js/main.ce25d6fe.chunk.js",
+    "main.js.map": "/solar-system-facts/static/js/main.ce25d6fe.chunk.js.map",
+    "runtime-main.js": "/solar-system-facts/static/js/runtime-main.37f319bc.js",
+    "runtime-main.js.map": "/solar-system-facts/static/js/runtime-main.37f319bc.js.map",
+    "static/js/2.9c3e35cd.chunk.js": "/solar-system-facts/static/js/2.9c3e35cd.chunk.js",
+    "static/js/2.9c3e35cd.chunk.js.map": "/solar-system-facts/static/js/2.9c3e35cd.chunk.js.map",
+    "static/js/3.5f7647e5.chunk.js": "/solar-system-facts/static/js/3.5f7647e5.chunk.js",
+    "static/js/3.5f7647e5.chunk.js.map": "/solar-system-facts/static/js/3.5f7647e5.chunk.js.map",
+    "index.html": "/solar-system-facts/index.html",
+    "static/css/main.49fcd4e7.chunk.css.map": "/solar-system-facts/static/css/main.49fcd4e7.chunk.css.map",
+    "static/js/2.9c3e35cd.chunk.js.LICENSE.txt": "/solar-system-facts/static/js/2.9c3e35cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37f319bc.js",
+    "static/js/2.9c3e35cd.chunk.js",
+    "static/css/main.49fcd4e7.chunk.css",
+    "static/js/main.ce25d6fe.chunk.js"
+  ]
+}
